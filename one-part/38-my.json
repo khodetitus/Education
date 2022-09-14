@@ -1,0 +1,5 @@
+[
+  {"name": "masoud", "age": 25, "phone": 9120572655, "married": true},
+  {"name": "kimiya", "age": 23, "phone": null, "married": true},
+  {"name": "saeid", "age": 35, "phone": [912523, 912271], "married": false}
+]
