@@ -7,6 +7,7 @@ ORDER BY country DESC;
 SELECT DISTINCT country, city
 FROM customers
 ORDER BY country, city DESC;
+-- AGGREGATE functions:MAX-MIN-SUM-AVG-COUNT
 --3
 SELECT MAX(unitprice)
 FROM order_details;
