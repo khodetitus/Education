@@ -1,7 +1,7 @@
 import requests
 
 # request by choose methods
-request1 = requests.get("https://httpbin.org/get/", proxies={"https": ""})  # send choose url
+request1 = requests.get("https://httpbin.org/get/", proxies={"https": ""}, params={"key": "value"})  # send choose url
 request2 = requests.post("https://httpbin.org/post/", data={"key": "value"})
 request3 = requests.put("https://httpbin.org/put/", data={"key": "value"})
 request4 = requests.delete("https://httpbin.org/delete/")
