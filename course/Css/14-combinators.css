@@ -1,0 +1,15 @@
+li > span {
+    background-color: brown;
+}
+
+li + span {
+    background-color: yellow;
+}
+
+li.item + span {
+    background-color: green;
+}
+
+li.item ~ span {
+    background-color: orangered;
+}
