@@ -1,0 +1,20 @@
+a[href] {
+    color: pink;
+}
+
+a[href="https://ex.com"] {
+    color: blue;
+}
+
+a[href*=example] {
+    color: green;
+}
+
+a[href$="io"] {
+    color: yellow;
+    background-color: black;
+}
+
+a[class~="item"] {
+    color: red;
+}
