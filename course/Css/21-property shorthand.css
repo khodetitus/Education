@@ -1,0 +1,91 @@
+li:hover {
+    background-color: darkcyan;
+}
+
+li:hover a {
+    color: white;
+}
+
+ul li:first-child a {
+    color: green;
+}
+
+li::before {
+    content: "before";
+    color: red;
+}
+
+li::after {
+    content: "after";
+    color: black;
+}
+
+p::first-letter {
+    font-weight: bold;
+    color: blue;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+p {
+    background: red;
+    /*without property shorthand*/
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    /*with property shorthand*/
+    padding: 10px 10px 10px 10px;
+    /*or*/
+    padding: 10px;
+    /*or*/
+    /*first:top and bottom second:right and left*/
+    padding: 10px 20px;
+}
+
+
+li {
+    padding-bottom: 10px;
+}
+
+p {
+    /*without property shorthand*/
+    border-style: solid;
+    border-width: 3px;
+    border-color: greenyellow;
+    /*with property shorthand*/
+    border: 3px solid greenyellow;
+
+}
+
+p {
+    /*without property shorthand*/
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    /*with property shorthand*/
+    margin: 30px 30px 30px 30px;
+    /*or*/
+    margin: 30px;
+    /*or*/
+    /*first:top and bottom second:right and left*/
+    margin: 30px 40px;
+}
+
+p {
+    width: 400px;
+    height: 144px;
+}
+
+/*final result:*/
+p {
+    width: 400px;
+    height: 144px;
+    background: red;
+    border: 3px solid greenyellow;
+    margin: 10px;
+    padding: 10px;
+}
