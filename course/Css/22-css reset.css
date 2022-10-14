@@ -1,0 +1,46 @@
+li:hover {
+    background-color: darkcyan;
+}
+
+li:hover a {
+    color: white;
+}
+
+ul li:first-child a {
+    color: green;
+}
+
+li::before {
+    content: "before";
+    color: red;
+}
+
+li::after {
+    content: "after";
+    color: black;
+}
+
+p::first-letter {
+    font-weight: bold;
+    color: blue;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+p {
+    width: 400px;
+    height: 144px;
+    background: red;
+    border: 3px solid greenyellow;
+    margin: 10px;
+    padding: 10px;
+}
+ul * {
+    color: red;
+}
