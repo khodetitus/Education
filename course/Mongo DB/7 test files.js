@@ -1,0 +1,13 @@
+db.users.insertMany([
+        {name:"masoud",age:25,country:"Iran"},
+        {name:"kevin",age:30,country:"USA"},
+        {name:"mark",age:43,country:"Spain"},
+        {name:"bob",age:54,country:"France"},
+        {name:"ross",age:23,country:"Spain"},
+        {name:"joey",age:12,country:"Germany"},
+        {name:"Kimiya",age:23,country:"Iran"},
+        {name:"mark",age:43,country:"Spain"},
+        {name:"anna",age:20,country:"France"},
+        {name:"erfan",age:24,country:"Iran"},
+        {name:"rose",age:20,country:"France"},
+])
