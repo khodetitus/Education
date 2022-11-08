@@ -8,10 +8,10 @@ db.users.find("",{name:1,"contact.phone":1})
 // 2.Normalized data model design:
 1.db.createCollection("users")
 2.db.createCollection("contact")
-3.db.users.insert({name:"masoud",age:25})
+3.db.users.insert({name:"akbar",age:25,id:2663})
 4.db.users.insert({name:"kimiya",age:23})
 5.copy _id,my choose users
-6.db.contact.insert({phone:4567,fax:982,_id:"635fea96b6000522cca0583f"})
+6.db.contact.insert({phone:4567,fax:982,user_id:"2662"})
 
 // 3.$lookUP aggregation:
 // {
@@ -26,8 +26,8 @@ db.users.find("",{name:1,"contact.phone":1})
 db.users.aggregate([{
     $lookup:{
         from:"contact",
-        localField:"_id",
-        foreignField:"_id",
+        localField:"id",
+        foreignField:"user_id",
         as:"contacts"
     }
 }])
