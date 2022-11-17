@@ -1,0 +1,62 @@
+1.variables:
+{{ name_of_variable }}
+ex:
+in views.py:
+def say_hello():
+   person = { "name": "masoud" }
+   return render(request, 'hello.html', person)
+in hello.html:
+<h3>hello {{ name }}</h3>
+-------------------------------------------------------------------------------
+2.tags:
+{% tag_name %}
+syntax:
+{% if condition %}
+    statement(s)
+{% endif %}
+ex:
+in hello.html:
+{% if name == "admin" %}
+    <p>Sorry!!</p>
+{% else %}
+    <p>hello {{ name }}</p>
+{% endif %}
+-------------------------------------------------------------------------------
+3.filters:
+{{ variable_name | filter_name }}
+ex:
+in hello.html:
+1.upper filters:
+<h3>hello {{ name | upper }}</h3>
+
+2.add filters:
+<h3>hello {{ name | add:"!!!!!" }}</h3>
+<h3> sum of 2 and 3 is {{ 2 | add:3 }}</h3>
+
+3.addslashes filters:
+my text = "I'm using Django"
+<h3> {{ my_text | addslashes }}</h3>
+output:
+I\'m using Django
+
+4.capfirst filters:
+my text = "django"
+<h3> {{ my_text | capfirst }}</h3>
+output:
+Django
+
+5.center filters:
+my text = "django"
+<h3> {{ my_text | center:20 }}</h3>
+output:
+       django
+
+6.date filters:
+my date = datetime.datetime.now()
+<h3> {{ my_date | date }}</h3>
+output:
+2022-11-10
+-------------------------------------------------------------------------------
+4.comments:
+{# comment #}
+
