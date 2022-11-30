@@ -1,9 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-    {% for todo in all %}
-        <h3>{{ todo.title }}</h3>
-    {% endfor %}
+    <div class="card">
+        {% for todo in all %}
+            <a class="card-body" href="{% url 'details' todo.id %}">
+                {{ todo.title }}
+            </a>
+            <br>
+        {% endfor %}
+    </div>
 {% endblock %}
 {% block title %}
     Home
